@@ -21,6 +21,14 @@ public class FeetLover extends Actor
         {
             resetFeetLover();
         }
+        
+        if(isTouching(Hero.class))
+        {
+            Skull skul = new Skull();
+            getWorld().addObject(skul, 300, 200);
+            
+            getWorld().removeObject(this);
+        }
     }
     
     public void resetFeetLover()
