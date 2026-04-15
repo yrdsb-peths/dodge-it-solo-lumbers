@@ -15,7 +15,7 @@ public class FeetLover extends Actor
     public void act()
     {
         // Add your action code here.
-        move(-10);
+        move(-20);
         
         if(getX() <= 0)
         {
